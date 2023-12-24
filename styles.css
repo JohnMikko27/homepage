@@ -3,4 +3,39 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --greenish-blue: #49c5b6;
+  --bluish: #2779a7;
+  --blackish: #1a1a1d;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 180vh;
+}
+
+/* nav {
+  background-color: var(--blackish);
+  position: fixed;
+  top: 0.2rem;
+  color: var(--greenish-blue);
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+} */
+
+.pic-of-me {
+  max-width: 6rem;
+  min-width: 2rem;
+}
+
+.icon {
+  max-width: 2rem;
 }
