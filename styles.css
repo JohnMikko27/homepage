@@ -22,8 +22,9 @@ body {
 header {
   border: 1px solid red;
   display: grid;
-  grid-template-columns: 0.4fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   gap: 2rem;
+  padding: 2rem;
 }
 
 header > img {
@@ -52,9 +53,26 @@ main {
   border: 1px solid black;
 }
 
-.pic-of-me {
-  max-width: 6rem;
-  min-width: 2rem;
+.project img {
+  width: 100%;
+}
+
+.project > div {
+  padding: 0.5rem;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title > div {
+  display: flex;
+  align-items: center;
+}
+
+.pic {
+  width: 100%;
 }
 
 .icon {
@@ -65,7 +83,7 @@ footer {
   border: 1px solid rgb(255, 0, 234);
   padding: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.6fr;
 }
 
 #contact-me > div {
