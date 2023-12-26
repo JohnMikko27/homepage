@@ -3,7 +3,6 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  box-sizing: border-box;
 }
 
 :root {
@@ -18,6 +17,7 @@ body {
   margin: 0;
   position: relative;
   height: 180vh;
+  box-sizing: border-box;
 }
 
 /* nav {
@@ -31,6 +31,27 @@ body {
   gap: 1rem;
 } */
 
+header {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 2rem;
+}
+
+header > img {
+  display: flex;
+  justify-self: end;
+}
+
+header > div {
+  max-width: 35rem;
+  padding: 1rem;
+}
+
+main {
+  border: 1px solid rgb(68, 118, 225);
+}
+
 .pic-of-me {
   max-width: 6rem;
   min-width: 2rem;
@@ -38,4 +59,8 @@ body {
 
 .icon {
   max-width: 2rem;
+}
+
+footer {
+  border: 1px solid rgb(255, 0, 234);
 }
