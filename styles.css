@@ -16,20 +16,8 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 180vh;
   box-sizing: border-box;
 }
-
-/* nav {
-  background-color: var(--blackish);
-  position: fixed;
-  top: 0.2rem;
-  color: var(--greenish-blue);
-  font-size: 1rem;
-  display: flex;
-  width: 100%;
-  gap: 1rem;
-} */
 
 header {
   border: 1px solid red;
@@ -50,6 +38,18 @@ header > div {
 
 main {
   border: 1px solid rgb(68, 118, 225);
+  padding: 1rem;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 3rem;
+}
+
+.project {
+  border: 1px solid black;
 }
 
 .pic-of-me {
@@ -63,4 +63,14 @@ main {
 
 footer {
   border: 1px solid rgb(255, 0, 234);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contact-me > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
 }
