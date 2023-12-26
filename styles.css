@@ -17,6 +17,13 @@ body {
   margin: 0;
   position: relative;
   box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -25,6 +32,7 @@ header {
   grid-template-columns: 0.6fr 1fr;
   gap: 2rem;
   padding: 2rem;
+  align-items: center;
 }
 
 header > img {
@@ -39,7 +47,7 @@ header > div {
 
 main {
   border: 1px solid rgb(68, 118, 225);
-  padding: 1rem;
+  padding: 2rem 4rem;
 }
 
 #projects-container {
@@ -84,6 +92,7 @@ footer {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 0.6fr;
+  align-items: center;
 }
 
 #contact-me > div {
@@ -93,13 +102,27 @@ footer {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
 @media (max-width: 500px) {
   header {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
   }
-
   footer {
     display: grid;
     grid-template-columns: 1fr;
