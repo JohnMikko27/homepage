@@ -27,12 +27,12 @@ body {
 }
 
 header {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   gap: 2rem;
   padding: 2rem;
   align-items: center;
+  background-color: var(--bluish);
 }
 
 header > img {
@@ -46,7 +46,6 @@ header > div {
 }
 
 main {
-  border: 1px solid rgb(68, 118, 225);
   padding: 2rem 4rem;
 }
 
@@ -58,7 +57,7 @@ main {
 }
 
 .project {
-  border: 1px solid black;
+  box-shadow: 1px 1px 10px 1px rgb(184, 184, 184);
 }
 
 .project img {
@@ -81,6 +80,7 @@ main {
 
 .pic {
   width: 100%;
+  box-shadow: 1px 1px 10px 2px rgb(119, 119, 119);
 }
 
 .icon {
@@ -88,11 +88,11 @@ main {
 }
 
 footer {
-  border: 1px solid rgb(255, 0, 234);
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 0.6fr;
   align-items: center;
+  background-color: var(--bluish);
 }
 
 #contact-me > div {
