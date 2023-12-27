@@ -52,7 +52,7 @@ main {
 
 #projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   justify-items: center;
   gap: 3rem;
 }
@@ -102,9 +102,9 @@ footer {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   body {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 
